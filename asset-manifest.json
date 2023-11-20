@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GeorgiySergeev/goit-react-hw-01-components/static/css/main.7acaea2f.css",
+    "main.js": "/GeorgiySergeev/goit-react-hw-01-components/static/js/main.07d3183d.js",
+    "index.html": "/GeorgiySergeev/goit-react-hw-01-components/index.html",
+    "main.7acaea2f.css.map": "/GeorgiySergeev/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/GeorgiySergeev/goit-react-hw-01-components/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}

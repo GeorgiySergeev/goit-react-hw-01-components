@@ -12,7 +12,6 @@ import friends from '../src/data/friends.json';
 import transactions from './data/transactions.json';
 
 export function App() {
-  console.log(friends);
   return (
     <div
       style={{

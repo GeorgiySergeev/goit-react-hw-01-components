@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/GeorgiySergeev/goit-react-hw-01-components/static/css/main.c24c77c0.css",
-    "main.js": "/GeorgiySergeev/goit-react-hw-01-components/static/js/main.cf1db44e.js",
-    "index.html": "/GeorgiySergeev/goit-react-hw-01-components/index.html",
-    "main.c24c77c0.css.map": "/GeorgiySergeev/goit-react-hw-01-components/static/css/main.c24c77c0.css.map",
-    "main.cf1db44e.js.map": "/GeorgiySergeev/goit-react-hw-01-components/static/js/main.cf1db44e.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.c24c77c0.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.cf1db44e.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.c24c77c0.css.map": "/goit-react-hw-01-components/static/css/main.c24c77c0.css.map",
+    "main.cf1db44e.js.map": "/goit-react-hw-01-components/static/js/main.cf1db44e.js.map"
   },
   "entrypoints": [
     "static/css/main.c24c77c0.css",

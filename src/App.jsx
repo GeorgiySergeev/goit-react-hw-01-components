@@ -8,10 +8,11 @@ import { TransactionHistory } from 'components/Transaction-history/TransactionHi
 //! json data
 import user from '../src/data/user.json';
 import stats from '../src/data/data.json';
-import friends from './data/friends.json';
+import friends from '../src/data/friends.json';
 import transactions from './data/transactions.json';
 
-export const App = () => {
+export function App() {
+  console.log(friends);
   return (
     <div
       style={{
@@ -25,7 +26,7 @@ export const App = () => {
         padding: '35px',
       }}>
       {/* React homework template */}
-      <Heading title={'BookFace.com'}></Heading>
+      <Heading title={'BookFace.com'}>Social network</Heading>
 
       <Profile
         userAvatar={user.avatar}
@@ -40,4 +41,8 @@ export const App = () => {
       <TransactionHistory items={transactions} />
     </div>
   );
-};
+}
+
+// App.propTypes = {
+//   friends: PropTypes.array.isRequired,
+// };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './statistics.module.css';
 export function Statistic(props) {
   const { title, stats } = props;
@@ -24,3 +25,14 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+Statistic.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

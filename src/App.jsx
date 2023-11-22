@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from 'components/Statistics/Statistics';
@@ -41,7 +41,3 @@ export const App = () => {
     </div>
   );
 };
-
-// App.propTypes = {
-//   friends: PropTypes.shape,
-// };

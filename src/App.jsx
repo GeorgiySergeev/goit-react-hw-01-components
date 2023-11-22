@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/Friend-list/FriendList';
@@ -39,3 +41,7 @@ export const App = () => {
     </div>
   );
 };
+
+// App.propTypes = {
+//   friends: PropTypes.shape,
+// };

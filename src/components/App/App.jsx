@@ -1,32 +1,28 @@
-// import PropTypes from 'prop-types';
-
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/Friend-list/FriendList';
+import { FriendList } from 'components/FriendList/FriendList';
 import { Heading } from 'components/Heading/Heading';
-import { TransactionHistory } from 'components/Transaction-history/TransactionHistory';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 //! json data
-import user from '../src/data/user.json';
-import stats from '../src/data/data.json';
-import friends from '../src/data/friends.json';
-import transactions from './data/transactions.json';
+import user from 'data/user.json';
+import stats from 'data/data.json';
+import friends from 'data/friends.json';
+import transactions from 'data/transactions.json';
 
+const commonCss = {
+  display: 'flex',
+  flexDirection: 'column',
+
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: 40,
+  color: '#010101',
+  padding: '35px',
+};
 export function App() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        padding: '35px',
-      }}>
-      {/* React homework template */}
+    <div style={commonCss}>
       <Heading title={'BookFace.com'}>Social network</Heading>
-
       <Profile
         userAvatar={user.avatar}
         userName={user.username}
@@ -36,12 +32,9 @@ export function App() {
         userViews={user.stats.views}
         userLikes={user.stats.likes}></Profile>
       <Statistic title="Upload stats" stats={stats}></Statistic>
+      {/* <Statistic stats={stats}></Statistic> */}
       <FriendList friends={friends}></FriendList>
       <TransactionHistory items={transactions} />
     </div>
   );
 }
-
-// App.propTypes = {
-//   friends: PropTypes.array.isRequired,
-// };

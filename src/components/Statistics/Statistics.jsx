@@ -1,10 +1,12 @@
+import { getRandomHexColor } from 'helpers';
 import PropTypes from 'prop-types';
 import css from './statistics.module.css';
-export function Statistic(props) {
-  const { title, stats } = props;
+
+export function Statistic({ title, stats }) {
   return (
     <section className={`${css.statistics}`}>
-      <h2 className={`${css.title}`}>{title}</h2>
+      {title && <h2 className={`${css.title}`}>{title}</h2>}
+      {/* <h2 className={`${css.title}`}>{title}</h2> */}
 
       <ul className={`${css.statList}`}>
         {stats.map(item => (
@@ -20,14 +22,9 @@ export function Statistic(props) {
     </section>
   );
 }
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
 
 Statistic.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

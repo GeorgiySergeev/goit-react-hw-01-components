@@ -1,16 +1,15 @@
 import PropTypes from 'prop-types';
 import css from './profile.module.css';
 
-export const Profile = props => {
-  const {
-    userAvatar,
-    userName,
-    userTag,
-    userLocation,
-    userFollowers,
-    userViews,
-    userLikes,
-  } = props;
+export const Profile = ({
+  userAvatar,
+  userName,
+  userTag,
+  userLocation,
+  userFollowers,
+  userViews,
+  userLikes,
+}) => {
   return (
     <div className={`${css.profile}`}>
       <div className={`${css.description}`}>

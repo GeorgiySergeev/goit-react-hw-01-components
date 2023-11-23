@@ -23,3 +23,6 @@ td {
   padding: 8px;
   text-align: left;
 }
+tr:nth-child(even) {
+  background-color: #d4d1d1;
+}

@@ -1,4 +1,29 @@
 .name {
-  font-size: 18px;
+  font-size: 16px;
   color: gray;
+}
+
+.status {
+  /* position: absolute;
+  bottom: 0; */
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50px;
+}
+.status.online {
+  background-color: green;
+}
+.status.offline {
+  background-color: red;
+}
+.avatar {
+  margin: 0px 0px 5px 0px;
+  width: 48px;
+}
+.statusBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

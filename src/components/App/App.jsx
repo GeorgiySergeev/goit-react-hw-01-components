@@ -22,7 +22,7 @@ const commonCss = {
 export function App() {
   return (
     <div style={commonCss}>
-      <Heading title={'BookFace.com'}>Social network</Heading>
+      <Heading title={'BookFace.com'}>Social network user profile</Heading>
       <Profile
         userAvatar={user.avatar}
         userName={user.username}
